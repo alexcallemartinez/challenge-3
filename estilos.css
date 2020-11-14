@@ -1,0 +1,359 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+
+
+:root{
+    /* ### Primary */
+
+    --Bright-Red: hsl(12, 88%, 59%);
+    --Dark-Blue: hsl(228, 39%, 23%);
+    
+    /* ### Neutral */
+    
+    --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+    --Very-Dark-Blue: hsl(233, 12%, 13%);
+    --Very-Pale-Red: hsl(13, 100%, 96%);
+    --Vary-Light-Gray: hsl(0, 0%, 98%);
+    
+}
+
+
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+font-family: 'Be Vietnam';
+}
+
+/* pagina */
+
+
+header{
+    position: relative;
+    overflow-x: hidden;
+}
+
+.bg-header{
+    position: absolute;
+    top:0;
+    right: 0;
+    transform: translate(20%, -30%);
+    z-index: -1;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px 0;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    align-items: center;
+    list-style: none;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 15px ;
+    font-weight: 400;
+    color: var(--Dark-Blue);
+    transition: all .3s;
+}
+nav ul li a:hover{
+    opacity: .6;
+}
+aside  button:hover,.header-main-content button:hover, .testimonio .btn-card:hover, .btn-getstarted:hover{
+    opacity: .6;
+}
+nav button, .header-main-content button, .testimonio .btn-card{
+padding: 12px 25px;
+background-color: var(--Bright-Red);
+border: none;
+cursor: pointer;
+color: #eee;
+outline: none;
+border-radius: 100px;
+box-shadow: 0 5px 20px 0 var(--Bright-Red);
+transition: all .3s;
+}
+
+.header-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-main-content-h1{
+    font-size: 53px;
+    color: var(--Dark-Blue);
+}
+.header-main-content-p1{
+    font-size: 16px;
+    color: var(--Dark-Grayish-Blue);
+    margin-top: 30px;
+}
+.header-main-content button{
+    margin-top: 30px;
+}
+.header-main-img img{
+    filter:drop-shadow(0 0 20px rgba(0,0,0,0.02))
+}
+
+/* main  */
+
+.bg-main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-60%, 60%);
+    z-index: -1;
+}
+
+section{
+    position: relative;
+}
+main{
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main-content-izquierda{
+    margin: 25px;
+    width: 450px;
+
+}
+.main-content-izquierda-h1{
+    font-size: 45px;
+    color: var(--Dark-Blue);
+
+}
+.main-content-izquierda-p{
+  font-size: 16px;
+  color: var(--Dark-Grayish-Blue);
+  margin-top: 30px;
+
+}
+
+
+/* mein derecha */
+
+.main-content-derecha{
+    margin: 25px;
+
+}
+.main-content-derecha-track{
+    margin-bottom:50px ;
+}
+.main-content-derecha-track-h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+    color: var(--Dark-Blue);
+    padding-right: 50px;
+    width: 400px;
+}
+.main-content-derecha-track-p{
+    font-size: 15px;
+    color: var(--Dark-Grayish-Blue);
+    margin-top: 10px;
+    width: 400px;
+    margin-left: 100px;
+
+}
+.main-content-derecha-track-h3.advance{
+    padding-right: 90px;
+
+}
+.main-content-derecha-track-h3.everything{
+    padding-right: 30px;
+}
+.main-content-derecha-track-h3 span{
+    padding: 7px 24px;
+    color: #eee;
+    font-size: 17px;
+    background-color:var(--Bright-Red );
+    border-radius: 100px;
+}
+
+/* testimonios */
+.testimonio{
+    text-align: center;
+}
+.textimonio-h1{
+    font-size: 45px;
+    text-align: center;
+    color: var(--Dark-Blue);
+
+}
+
+.testimonio-card{
+    width: 380px;
+    text-align: center;
+    height: auto;
+    display: grid;
+    margin: 10px;
+    place-items: center;
+    background: var(--Vary-Light-Gray);
+
+}
+.testimonio-card img{
+    margin-top: -70px;
+    position: relative;
+    z-index: 400;
+}
+.testimonio-card h3{
+    margin-top: 20px;
+    color: var(--Dark-Blue);
+
+}
+.testimonio-card p{
+   margin-top: 20px;
+   font-size: 14px;
+   color: var(--Dark-Grayish-Blue); 
+}
+
+.glider{
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  place-items: center; 
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.testimonio .btn-card{
+    margin: 20px 0;
+    
+}
+
+/* aside */
+
+aside{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    margin-top: 100px;
+    background-color: var(--Bright-Red);
+    padding: 60px 0;
+    color:var(--Vary-Light-Gray);
+    position: relative;
+    overflow: hidden;
+}
+.aside-grande{
+    position: absolute;
+    pointer-events: none;
+
+}
+.aside h1{
+    font-size: 40px;
+}
+aside .btn-aside{
+    padding: 12px 25px;
+    background-color:#fff ;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    color:var(--Bright-Red) ;
+    outline: none;
+    border-radius: 100px;
+    transition: all .3s;
+    box-shadow: 0 5px 20px 0 hsla(12, 88%, 59%, 0.582);
+
+}
+
+/* footer */
+
+
+footer{
+    background-color: var(--Very-Dark-Blue) ;
+    display: flex;
+    padding: 50px 0;
+    text-align: center;
+    justify-content: space-evenly;
+
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-redes{
+    margin-top: 50px;
+}
+.logo-redes  svg{
+    margin-left: 5x;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.logo-redes svg path{
+    transition: all .3s;
+
+
+}
+.logo-redes svg:hover path{
+fill: var(--Bright-Red);
+}
+
+.footer-nav{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+
+}
+.footer-nav ul{
+    list-style: none;
+}
+.footer-nav ul li{
+    margin-bottom:10px ;
+}
+.footer-nav ul li a{
+text-decoration: none;
+font-size: 16px;
+color: white;
+transition: all .3s;
+}
+.footer-nav ul li a:hover{
+   color: var(--Bright-Red); 
+}
+
+footer form input{
+    padding: 15px 25px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    margin-right: 10px;
+
+}
+
+footer form button{
+    padding: 15px 25px;
+    border-radius: 100px;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s;
+    border: none;
+    background: var(--Bright-Red);
+    color: white;
+}
+.copy{
+    background-color: var(--Very-Dark-Blue);
+    color: var(--Dark-Grayish-Blue);
+    font-size: 14px;
+    margin-top: 40px;
+    text-align: right;
+}
+
+
+
+
+
